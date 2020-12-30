@@ -145,7 +145,7 @@ export default function App() {
         </BannerRow>
         <FindClubTitle>Find Clubs</FindClubTitle>
         <FindClubRow>
-          <Card />
+          <Card title="Framer Club" img={require("./images/framer.png")} />
           <Card />
           <Card />
           <Card />

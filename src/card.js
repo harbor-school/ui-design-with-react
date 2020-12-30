@@ -1,31 +1,43 @@
 import React from "react";
 import styled from "styled-components";
 import * as Illust from "./illusts";
+import { COLUMN_RATIO } from "./constants";
 
-const Wrap = styled.div`
+const ResponsiveWrap = styled.div`
   background: white;
   box-shadow: 3px 10px 20px 0px hsla(130, 100%, 10%, 0.3);
   border-radius: 12px;
   overflow: hidden;
+  padding-bottom: ${COLUMN_RATIO * 100}%;
+  position: relative;
 `;
+
 const Img = styled.img`
   width: 100%;
   display: block;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+`;
+const InfoWrap = styled.div`
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 `;
 const Info = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px 30px;
   align-items: center;
-  /* background: green; */
 `;
 const Details = styled.div`
-  /* background: pink; */
   display: flex;
   align-items: center;
 `;
 const Title = styled.h3`
   font-family: "Poppins", sans-serif;
+  color: white;
 `;
 const MemberInfo = styled.span`
   display: flex;
@@ -34,25 +46,43 @@ const MemberInfo = styled.span`
 `;
 const MemberNumber = styled.p`
   font-family: "Poppins", sans-serif;
-  /* background: red; */
   display: inline-block;
   margin-left: 4px;
+  color: white;
 `;
 
-export function Card() {
+const Gradient = styled.div`
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0) 0%,
+    hsla(0, 0%, 0%, 0.6) 100%
+  );
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+`;
+
+export function Card({
+  title = "Three.js Club",
+  img = require("./images/react-three-fiber.gif")
+}) {
   return (
-    <Wrap>
-      <Img src={require("./images/react-three-fiber.gif")} />
-      <Info>
-        <Illust.Home />
-        <Details>
-          <Title>Three.js Club</Title>
-          <MemberInfo>
-            <Illust.User height="14px" />
-            <MemberNumber>102</MemberNumber>
-          </MemberInfo>
-        </Details>
-      </Info>
-    </Wrap>
+    <ResponsiveWrap>
+      <Img src={img} />
+      <Gradient />
+      <InfoWrap>
+        <Info>
+          <Illust.Home />
+          <Details>
+            <Title>{title}</Title>
+            <MemberInfo>
+              <Illust.User height="14px" />
+              <MemberNumber>101</MemberNumber>
+            </MemberInfo>
+          </Details>
+        </Info>
+      </InfoWrap>
+    </ResponsiveWrap>
   );
 }
