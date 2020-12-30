@@ -28,8 +28,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px ${pageMargin}px;
-  background: wh;
+  padding: 32px ${pageMargin}px;
 `;
 const Logo = styled.div`
   display: flex;
