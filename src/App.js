@@ -11,7 +11,7 @@ const Guide = styled.div`
   top: 0;
   width: 100%;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0;
 `;
 
 const GuideRow = styled.div`
@@ -37,7 +37,7 @@ const Logo = styled.div`
 `;
 const Title = styled.span`
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   margin-left: 16px;
 `;
@@ -70,19 +70,19 @@ const Banner = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-const FindClubRow = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  background: pink;
-  justify-content: center;
-  column-gap: 10px;
-  row-gap: 10px;
-`;
 const FindClubTitle = styled.h2`
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   margin-top: 32px;
+`;
+const FindClubRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* background: pink; */
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 20px;
 `;
 
 export default function App() {
@@ -106,7 +106,7 @@ export default function App() {
       </Guide>
       <Header>
         <Logo>
-          <Illust.Home />
+          <Illust.Home height="32px" />
           <Title>Coding Club</Title>
         </Logo>
         <MenuItems>
@@ -128,7 +128,7 @@ export default function App() {
         <BannerRow>
           <div />
           <Banner>
-            <Illust.Home height="98px" />
+            <Illust.Home height="90px" />
             <Title
               style={{
                 fontSize: 70,

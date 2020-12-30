@@ -9,6 +9,9 @@ export function Home(props) {
       xmlns="http://www.w3.org/2000/svg"
       height="36"
       viewBox="0 0 100 58"
+      style={{
+        display: "block"
+      }}
       {...props}
     >
       <path
