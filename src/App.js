@@ -29,7 +29,7 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 16px ${pageMargin}px;
-  background: white;
+  background: wh;
 `;
 const Logo = styled.div`
   display: flex;
@@ -80,8 +80,8 @@ const FindClubRow = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* background: pink; */
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
   margin-top: 20px;
 `;
 
@@ -146,8 +146,8 @@ export default function App() {
         <FindClubTitle>Find Clubs</FindClubTitle>
         <FindClubRow>
           <Card title="Framer Club" img={require("./images/framer.png")} />
-          <Card />
-          <Card />
+          <Card title="Canvas Club" img={require("./images/canvas.jpg")} />
+          <Card title="WebGL Club" img={require("./images/webgl-water.jpg")} />
           <Card />
         </FindClubRow>
       </Content>

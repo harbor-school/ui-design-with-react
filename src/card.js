@@ -66,7 +66,7 @@ const Gradient = styled.div`
 
 export function Card({
   title = "Three.js Club",
-  img = require("./images/react-three-fiber.gif")
+  img = require("./images/billie.png")
 }) {
   return (
     <ResponsiveWrap>
