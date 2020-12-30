@@ -27,7 +27,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px ${pageMargin}px;
+  padding: 16px ${pageMargin}px;
   background: white;
 `;
 const Logo = styled.div`
@@ -107,8 +107,8 @@ export default function App() {
               src="https://source.unsplash.com/random?profile"
               alt="profile"
               style={{
-                width: 40,
-                height: 40,
+                width: 36,
+                height: 36,
                 borderRadius: "100%",
                 display: "block"
               }}
