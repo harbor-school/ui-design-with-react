@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import * as Illust from "./illusts";
-import { COLUMN_RATIO } from "./constants";
+import * as Illust from "../illusts";
+import { COLUMN_RATIO } from "../constants";
 
 const ResponsiveWrap = styled.div`
   background: white;
@@ -66,7 +66,7 @@ const Gradient = styled.div`
 
 export function Card({
   title = "Three.js Club",
-  img = require("./images/billie.png")
+  img = require("../images/billie.png")
 }) {
   return (
     <ResponsiveWrap>
