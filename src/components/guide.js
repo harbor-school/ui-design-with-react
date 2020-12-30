@@ -8,7 +8,7 @@ const Wrap = styled.div`
   top: 0;
   width: 100%;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0;
 `;
 
 const GuideRow = styled.div`

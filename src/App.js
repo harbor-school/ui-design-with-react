@@ -3,7 +3,7 @@ import "./styles.css";
 import styled from "styled-components";
 import { pageMargin } from "./constants";
 import * as Illust from "./illusts";
-import { Header, Card, Guide } from "./components";
+import { Header, Card, Guide, Footer } from "./components";
 
 const Title = styled.span`
   font-family: "Poppins", sans-serif;
@@ -75,6 +75,7 @@ export default function App() {
           <Card />
         </FindClubRow>
       </Content>
+      <Footer />
     </>
   );
 }
