@@ -3,6 +3,7 @@ import "./styles.css";
 import styled from "styled-components";
 import { pageMargin } from "./constants";
 import * as Illust from "./illusts";
+import { Card } from "./card";
 
 const Guide = styled.div`
   background: blue;
@@ -69,7 +70,14 @@ const Banner = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-const FindClubRow = styled.div``;
+const FindClubRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  background: pink;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+`;
 const FindClubTitle = styled.h2`
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -135,8 +143,12 @@ export default function App() {
             </Title>
           </Banner>
         </BannerRow>
+        <FindClubTitle>Find Clubs</FindClubTitle>
         <FindClubRow>
-          <FindClubTitle>Find Clubs</FindClubTitle>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </FindClubRow>
       </Content>
     </>
