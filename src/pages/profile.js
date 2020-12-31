@@ -22,6 +22,7 @@ const Filter = styled.div`
   text-align: right;
   margin-bottom: 20px;
   font-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 const SubmissionsGrid = styled.div`
   display: grid;
