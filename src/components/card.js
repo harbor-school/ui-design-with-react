@@ -74,7 +74,7 @@ export function Card({
       <Gradient />
       <InfoWrap>
         <Info>
-          <Illust.Home />
+          <Illust.Home height="28px" />
           <Details>
             <Title>{title}</Title>
             <MemberInfo>
