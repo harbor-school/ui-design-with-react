@@ -18,12 +18,6 @@ const Logo = styled(Link)`
   text-decoration: none;
   color: black;
 `;
-const Title = styled.span`
-  font-size: 20px;
-  font-weight: 700;
-  margin-left: 16px;
-  color: white;
-`;
 
 const MenuItems = styled.div`
   display: flex;
@@ -57,7 +51,7 @@ export function Header() {
             }}
           >
             <img
-              src="https://source.unsplash.com/random?portrait"
+              src={require("../assets/images/portraits/profile.jpeg")}
               alt="profile"
               style={{
                 width: 36,

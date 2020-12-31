@@ -23,6 +23,7 @@ const Filter = styled.div`
   margin-bottom: 20px;
   font-size: 14px;
   font-family: "Noto Sans KR", sans-serif;
+  color: white;
 `;
 const SubmissionsGrid = styled.div`
   display: grid;
@@ -30,7 +31,9 @@ const SubmissionsGrid = styled.div`
   gap: 16px;
 `;
 
-const Info = styled.div``;
+const Info = styled.div`
+  color: white;
+`;
 const Name = styled.h1`
   margin-top: 28px;
   line-height: 1em;
@@ -51,7 +54,7 @@ export function Profile() {
       <Row>
         <Column>
           <img
-            src="https://source.unsplash.com/random?portrait"
+            src={require("../assets/images/portraits/profile.jpeg")}
             alt="profile"
             style={{
               width: 200,

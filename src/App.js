@@ -10,6 +10,7 @@ const Wrap = styled.div`
   /* font-family: "Playfair Display", serif; */
   font-family: "Albra", serif;
   background: ${colors.bacgkroundPrimary};
+  color: white;
 `;
 
 export default function App() {
