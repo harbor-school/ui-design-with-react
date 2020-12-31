@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { pageMargin } from "../constants";
+import { pageMargin, LOGGED_IN } from "../constants";
 import * as Illust from "../illusts";
 import { Link } from "react-router-dom";
+import { Button } from "../components";
 
 const Wrap = styled.header`
   display: flex;
@@ -45,46 +46,53 @@ export function Header() {
         <Title>Coding Club</Title>
       </Logo>
       <MenuItems>
-        <MenuItem
-          style={{
-            position: "relative"
-          }}
-        >
-          <img
-            src="https://source.unsplash.com/random?portrait"
-            alt="profile"
+        {!LOGGED_IN && (
+          <MenuItem>
+            <Button>Login</Button>
+          </MenuItem>
+        )}
+        {LOGGED_IN && (
+          <MenuItem
             style={{
-              width: 36,
-              height: 36,
-              borderRadius: "100%",
-              display: "block",
-              objectFit: "cover",
-              cursor: "pointer"
+              position: "relative"
             }}
-            onClick={() => setMenu(!menu)}
-          />
-          {menu && (
-            <ul
+          >
+            <img
+              src="https://source.unsplash.com/random?portrait"
+              alt="profile"
               style={{
-                background: "green",
-                position: "absolute",
-                top: "100%",
-                right: 0,
-                whiteSpace: "nowrap"
+                width: 36,
+                height: 36,
+                borderRadius: "100%",
+                display: "block",
+                objectFit: "cover",
+                cursor: "pointer"
               }}
-            >
-              <li>
-                <Link to="/profile">Profile</Link>
-              </li>
-              <li>
-                <Link to="/my-clubs">My Clubs</Link>
-              </li>
-              <li>
-                <Link to="/settings">Settings</Link>
-              </li>
-            </ul>
-          )}
-        </MenuItem>
+              onClick={() => setMenu(!menu)}
+            />
+            {menu && (
+              <ul
+                style={{
+                  background: "green",
+                  position: "absolute",
+                  top: "100%",
+                  right: 0,
+                  whiteSpace: "nowrap"
+                }}
+              >
+                <li>
+                  <Link to="/profile">Profile</Link>
+                </li>
+                <li>
+                  <Link to="/my-clubs">My Clubs</Link>
+                </li>
+                <li>
+                  <Link to="/settings">Settings</Link>
+                </li>
+              </ul>
+            )}
+          </MenuItem>
+        )}
       </MenuItems>
     </Wrap>
   );

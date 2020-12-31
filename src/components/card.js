@@ -5,7 +5,7 @@ import { COLUMN_RATIO } from "../constants";
 
 const ResponsiveWrap = styled.div`
   background: white;
-  box-shadow: 3px 10px 20px 0px hsla(130, 100%, 10%, 0.3);
+  box-shadow: 3px 10px 20px 0px hsla(43, 100%, 10%, 0.3);
   border-radius: 12px;
   overflow: hidden;
   padding-bottom: ${COLUMN_RATIO * 100}%;
