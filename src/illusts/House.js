@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Illust = styled.svg``;
 
-export function Home(props) {
+export function House(props) {
   return (
     <Illust
       xmlns="http://www.w3.org/2000/svg"
