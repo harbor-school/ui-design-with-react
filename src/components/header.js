@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { pageMargin } from "../constants";
 import * as Illust from "../illusts";
+import { Link } from "react-router-dom";
 
 const Wrap = styled.header`
   display: flex;
@@ -9,9 +10,11 @@ const Wrap = styled.header`
   align-items: center;
   padding: 32px ${pageMargin}px;
 `;
-const Logo = styled.div`
+const Logo = styled(Link)`
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: black;
 `;
 const Title = styled.span`
   font-family: "Poppins", sans-serif;
@@ -36,7 +39,7 @@ const MenuItem = styled.span`
 export function Header() {
   return (
     <Wrap>
-      <Logo>
+      <Logo to="/">
         <Illust.Home height="32px" />
         <Title>Coding Club</Title>
       </Logo>
