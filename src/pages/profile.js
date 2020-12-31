@@ -65,11 +65,11 @@ export function Profile() {
         </Column>
         <Column>
           <SubmissionsGrid>
-            <SubmissionCard />
-            <SubmissionCard />
-            <SubmissionCard />
-            <SubmissionCard />
-            <SubmissionCard />
+            <SubmissionCard img={require("../images/profile/canvas-1.png")} />
+            <SubmissionCard img={require("../images/profile/canvas-2.png")} />
+            <SubmissionCard img={require("../images/profile/canvas-3.png")} />
+            <SubmissionCard img={require("../images/profile/canvas-4.png")} />
+            <SubmissionCard img={require("../images/profile/threejs-1.png")} />
           </SubmissionsGrid>
         </Column>
       </Row>
