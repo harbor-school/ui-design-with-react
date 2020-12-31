@@ -5,14 +5,11 @@ import { Card, Guide } from "../components";
 
 const Wrap = styled.div`
   margin: 0px ${pageMargin}px;
-  /* padding: 200px 0px; */
   padding-top: 100px;
   padding-bottom: 200px;
 `;
 const Info = styled.div`
   margin-top: 96px;
-  /* text-align: center; */
-  /* background: green; */
   display: flex;
   flex-direction: column;
   align-items: center;
