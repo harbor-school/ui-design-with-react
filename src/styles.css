@@ -3,6 +3,78 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
+@font-face {
+  font-family: "Albra";
+  src: url("/fonts/Albra/AlbraLight.eot");
+  src: url("/fonts/Albra/AlbraLight.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Albra/AlbraLight.woff2") format("woff2"),
+    url("/fonts/Albra/AlbraLight.woff") format("woff"),
+    url("/fonts/Albra/AlbraLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Albra";
+  src: url("/fonts/Albra/AlbraBlack.eot");
+  src: url("/fonts/Albra/AlbraBlack.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Albra/AlbraBlack.woff2") format("woff2"),
+    url("/fonts/Albra/AlbraBlack.woff") format("woff"),
+    url("/fonts/Albra/AlbraBlack.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AlbraBold";
+  src: url("/fonts/Albra/AlbraBold.eot");
+  src: url("/fonts/Albra/AlbraBold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Albra/AlbraBold.woff2") format("woff2"),
+    url("/fonts/Albra/AlbraBold.woff") format("woff"),
+    url("/fonts/Albra/AlbraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Albra";
+  src: url("/fonts/Albra/AlbraRegular.eot");
+  src: url("/fonts/Albra/AlbraRegular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Albra/AlbraRegular.woff2") format("woff2"),
+    url("/fonts/Albra/AlbraRegular.woff") format("woff"),
+    url("/fonts/Albra/AlbraRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Albra";
+  src: url("/fonts/Albra/AlbraMedium.eot");
+  src: url("/fonts/Albra/AlbraMedium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Albra/AlbraMedium.woff2") format("woff2"),
+    url("/fonts/Albra/AlbraMedium.woff") format("woff"),
+    url("/fonts/Albra/AlbraMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Albra";
+  src: url("/fonts/Albra/AlbraSemi.eot");
+  src: url("/fonts/Albra/AlbraSemi.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Albra/AlbraSemi.woff2") format("woff2"),
+    url("/fonts/Albra/AlbraSemi.woff") format("woff"),
+    url("/fonts/Albra/AlbraSemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body,
 div,
