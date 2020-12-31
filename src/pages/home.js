@@ -2,7 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { pageMargin } from "../constants";
 import * as Illust from "../illusts";
-import { Card, Guide } from "../components";
+import { Card } from "../components";
+
+const Wrap = styled.div`
+  /* background: yellowgreen; */
+  margin: 0px ${pageMargin}px;
+  padding: 100px 0px;
+`;
 
 const Title = styled.span`
   font-family: "Poppins", sans-serif;
@@ -11,16 +17,10 @@ const Title = styled.span`
   margin-left: 16px;
 `;
 
-const Content = styled.div`
-  /* background: yellowgreen; */
-  margin: 0px ${pageMargin}px;
-`;
-
 const BannerRow = styled.div`
   /* background: yellowgreen; */
   display: grid;
   grid-template-columns: 3fr 6fr 3fr;
-  margin-top: 100px;
 `;
 const Banner = styled.div`
   display: flex;
@@ -44,36 +44,32 @@ const FindClubRow = styled.div`
 
 export function Home() {
   return (
-    <>
-      <Guide />
-
-      <Content>
-        <BannerRow>
-          <div />
-          <Banner>
-            <Illust.Home height="90px" />
-            <Title
-              style={{
-                fontSize: 70,
-                lineHeight: "1em",
-                textAlign: "center",
-                marginTop: 24
-              }}
-            >
-              Coding
-              <br />
-              Club
-            </Title>
-          </Banner>
-        </BannerRow>
-        <FindClubTitle>Find Clubs</FindClubTitle>
-        <FindClubRow>
-          <Card title="Framer Club" img={require("../images/framer.png")} />
-          <Card title="Canvas Club" img={require("../images/canvas.jpg")} />
-          <Card title="WebGL Club" img={require("../images/webgl-water.jpg")} />
-          <Card />
-        </FindClubRow>
-      </Content>
-    </>
+    <Wrap>
+      <BannerRow>
+        <div />
+        <Banner>
+          <Illust.Home height="90px" />
+          <Title
+            style={{
+              fontSize: 70,
+              lineHeight: "1em",
+              textAlign: "center",
+              marginTop: 24
+            }}
+          >
+            Coding
+            <br />
+            Club
+          </Title>
+        </Banner>
+      </BannerRow>
+      <FindClubTitle>Find Clubs</FindClubTitle>
+      <FindClubRow>
+        <Card title="Framer Club" img={require("../images/framer.png")} />
+        <Card title="Canvas Club" img={require("../images/canvas.jpg")} />
+        <Card title="WebGL Club" img={require("../images/webgl-water.jpg")} />
+        <Card />
+      </FindClubRow>
+    </Wrap>
   );
 }

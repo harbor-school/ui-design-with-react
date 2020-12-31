@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { pageMargin } from "../constants";
 import * as Illust from "../illusts";
@@ -37,6 +37,7 @@ const MenuItem = styled.span`
 `;
 
 export function Header() {
+  const [menu, setMenu] = useState(false);
   return (
     <Wrap>
       <Logo to="/">
@@ -50,35 +51,39 @@ export function Header() {
           }}
         >
           <img
-            src="https://source.unsplash.com/random?profile"
+            src="https://source.unsplash.com/random?portrait"
             alt="profile"
             style={{
               width: 36,
               height: 36,
               borderRadius: "100%",
               display: "block",
-              objectFit: "cover"
+              objectFit: "cover",
+              cursor: "pointer"
             }}
+            onClick={() => setMenu(!menu)}
           />
-          <ul
-            style={{
-              background: "green",
-              position: "absolute",
-              top: "100%",
-              right: 0,
-              whiteSpace: "nowrap"
-            }}
-          >
-            <li>
-              <Link to="/profile">Profile</Link>
-            </li>
-            <li>
-              <Link to="/my-clubs">My Clubs</Link>
-            </li>
-            <li>
-              <Link to="/settings">Settings</Link>
-            </li>
-          </ul>
+          {menu && (
+            <ul
+              style={{
+                background: "green",
+                position: "absolute",
+                top: "100%",
+                right: 0,
+                whiteSpace: "nowrap"
+              }}
+            >
+              <li>
+                <Link to="/profile">Profile</Link>
+              </li>
+              <li>
+                <Link to="/my-clubs">My Clubs</Link>
+              </li>
+              <li>
+                <Link to="/settings">Settings</Link>
+              </li>
+            </ul>
+          )}
         </MenuItem>
       </MenuItems>
     </Wrap>
