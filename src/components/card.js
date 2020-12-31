@@ -5,7 +5,7 @@ import { COLUMN_RATIO } from "../constants";
 
 const ResponsiveWrap = styled.div`
   background: white;
-  box-shadow: 3px 10px 20px 0px hsla(43, 100%, 10%, 0.3);
+  box-shadow: 3px 10px 20px 0px hsla(43, 100%, 13%, 0.3);
   border-radius: 12px;
   overflow: hidden;
   padding-bottom: ${COLUMN_RATIO * 100}%;
@@ -55,8 +55,8 @@ const MemberNumber = styled.p`
 const Gradient = styled.div`
   background: linear-gradient(
     180deg,
-    hsla(0, 0%, 100%, 0) 0%,
-    hsla(0, 0%, 0%, 0.6) 100%
+    hsla(22, 100%, 13%, 0) 0%,
+    hsla(22, 100%, 13%, 0.6) 100%
   );
   position: absolute;
   top: 0;
