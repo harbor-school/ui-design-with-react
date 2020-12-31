@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Home, Profile, MyClubs, Settings } from "./pages";
+import { Home, Profile, MyClubs, Settings, PostDemo, ClubDemo } from "./pages";
 import { Guide, Header, Footer } from "./components";
 import { colors } from "./constants";
 import styled from "styled-components";
 import "./styles.css";
-import { PostDemo } from "./pages/post-demo";
 
 const Wrap = styled.div`
   /* font-family: "Playfair Display", serif; */
@@ -24,6 +23,7 @@ export default function App() {
         <Route exact path="/my-clubs" component={MyClubs} />
         <Route exact path="/settings" component={Settings} />
         <Route exact path="/gallery/billie-with-youtube" component={PostDemo} />
+        <Route exact path="/club/threejs-club" component={ClubDemo} />
         <Footer />
       </Router>
     </Wrap>

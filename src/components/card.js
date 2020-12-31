@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import * as Illust from "../assets/illusts";
 import { COLUMN_RATIO } from "../constants";
+import { Link } from "react-router-dom";
 
-const ResponsiveWrap = styled.div`
+const ResponsiveWrap = styled(Link)`
   background: white;
   box-shadow: 3px 10px 20px 0px hsla(43, 100%, 13%, 0.3);
   border-radius: 12px;
@@ -67,7 +68,7 @@ export function Card({
   img = require("../assets/images/billie.png")
 }) {
   return (
-    <ResponsiveWrap>
+    <ResponsiveWrap to="/club/threejs-club">
       <Img src={img} />
       <Gradient />
       <InfoWrap>
