@@ -5,11 +5,10 @@ import { Guide, Header, Footer } from "./components";
 import { colors } from "./constants";
 import styled from "styled-components";
 import "./styles.css";
-// import "./assets/fonts/Albra/stylesheet.css";
 
 const Wrap = styled.div`
   /* font-family: "Playfair Display", serif; */
-  font-family: "AlbraBold";
+  font-family: "Albra", serif;
   background: ${colors.bacgkroundPrimary};
 `;
 
