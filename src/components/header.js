@@ -9,6 +9,7 @@ const Wrap = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 32px ${pageMargin}px;
+  /* background: blue; */
 `;
 const Logo = styled(Link)`
   display: flex;
@@ -27,7 +28,6 @@ const MenuItems = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
-  /* background: green; */
 `;
 
 const MenuItem = styled.span`
@@ -44,7 +44,11 @@ export function Header() {
         <Title>Coding Club</Title>
       </Logo>
       <MenuItems>
-        <MenuItem>
+        <MenuItem
+          style={{
+            position: "relative"
+          }}
+        >
           <img
             src="https://source.unsplash.com/random?profile"
             alt="profile"
@@ -52,9 +56,29 @@ export function Header() {
               width: 36,
               height: 36,
               borderRadius: "100%",
-              display: "block"
+              display: "block",
+              objectFit: "cover"
             }}
           />
+          <ul
+            style={{
+              background: "green",
+              position: "absolute",
+              top: "100%",
+              right: 0,
+              whiteSpace: "nowrap"
+            }}
+          >
+            <li>
+              <Link to="/profile">Profile</Link>
+            </li>
+            <li>
+              <Link to="/my-clubs">My Clubs</Link>
+            </li>
+            <li>
+              <Link to="/settings">Settings</Link>
+            </li>
+          </ul>
         </MenuItem>
       </MenuItems>
     </Wrap>
