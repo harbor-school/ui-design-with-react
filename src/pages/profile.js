@@ -78,9 +78,7 @@ export function Profile() {
         <Column>
           <Filter>Canvas Club (4) / Three.js Club (1)</Filter>
           <SubmissionsGrid>
-            <SubmissionCard
-              img={require("../assets/images/profile/canvas-1.png")}
-            />
+            <SubmissionCard img={require("../assets/images/billie.png")} />
             <SubmissionCard
               img={require("../assets/images/profile/canvas-2.png")}
             />

@@ -5,6 +5,7 @@ import { Guide, Header, Footer } from "./components";
 import { colors } from "./constants";
 import styled from "styled-components";
 import "./styles.css";
+import { PostDemo } from "./pages/post-demo";
 
 const Wrap = styled.div`
   /* font-family: "Playfair Display", serif; */
@@ -19,9 +20,10 @@ export default function App() {
         <Guide />
         <Header />
         <Route exact path="/" component={Home} />
-        <Route exact path="/profile" component={Profile} />
+        <Route exact path="/user/ruucm" component={Profile} />
         <Route exact path="/my-clubs" component={MyClubs} />
         <Route exact path="/settings" component={Settings} />
+        <Route exact path="/gallery/billie-with-youtube" component={PostDemo} />
         <Footer />
       </Router>
     </Wrap>

@@ -80,7 +80,7 @@ export function Header() {
                 }}
               >
                 <li>
-                  <Link to="/profile">Profile</Link>
+                  <Link to="/user/ruucm">Profile</Link>
                 </li>
                 <li>
                   <Link to="/my-clubs">My Clubs</Link>
