@@ -77,9 +77,6 @@ export function Header() {
                   <Link to="/user/ruucm">Profile</Link>
                 </li>
                 <li>
-                  <Link to="/my-clubs">My Clubs</Link>
-                </li>
-                <li>
                   <Link to="/settings">Settings</Link>
                 </li>
               </ul>

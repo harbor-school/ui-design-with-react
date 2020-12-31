@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { TIMELINE_RATIO } from "../constants";
+import { colors, TIMELINE_RATIO } from "../constants";
 import { Link } from "react-router-dom";
 
 const Wrap = styled.div`
-  background: hsl(43, 82%, 70%);
+  background: ${colors.bacgkroundSecondary};
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 32px;
