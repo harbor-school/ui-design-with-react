@@ -25,7 +25,9 @@ const Info = styled.div``;
 const Name = styled.h1`
   margin-top: 28px;
 `;
-const Detail = styled.div``;
+const Detail = styled.div`
+  margin-top: 8px;
+`;
 const DetailBlock = styled.div`
   display: flex;
   justify-content: space-between;
