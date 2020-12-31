@@ -19,10 +19,10 @@ const Logo = styled(Link)`
   color: black;
 `;
 const Title = styled.span`
-  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin-left: 16px;
+  color: white;
 `;
 
 const MenuItems = styled.div`
@@ -32,7 +32,6 @@ const MenuItems = styled.div`
 `;
 
 const MenuItem = styled.span`
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   margin-left: 16px;
 `;
@@ -42,13 +41,13 @@ export function Header() {
   return (
     <Wrap>
       <Logo to="/">
-        <Illust.Home height="32px" />
-        <Title>Coding Club</Title>
+        <Illust.House height="32px" />
+        {/* <Title>Coding Club</Title> */}
       </Logo>
       <MenuItems>
         {!LOGGED_IN && (
           <MenuItem>
-            <Button>Login</Button>
+            <Button>Sign Up</Button>
           </MenuItem>
         )}
         {LOGGED_IN && (

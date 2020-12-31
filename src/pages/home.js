@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { pageMargin } from "../constants";
+import { colors, pageMargin } from "../constants";
 import * as Illust from "../illusts";
 import { Card } from "../components";
 
@@ -11,10 +11,10 @@ const Wrap = styled.div`
 `;
 
 const Title = styled.span`
-  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin-left: 16px;
+  color: white;
 `;
 
 const BannerRow = styled.div`
@@ -28,10 +28,19 @@ const Banner = styled.div`
   align-items: center;
 `;
 const FindClubTitle = styled.h2`
-  font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: 700;
   margin-top: 32px;
+  color: white;
+  display: flex;
+  align-items: center;
+`;
+const FindClubTitleCircle = styled.div`
+  width: 18px;
+  height: 18px;
+  background: ${colors.primary};
+  margin-right: 10px;
+  border-radius: 100%;
 `;
 const FindClubRow = styled.div`
   display: grid;
@@ -48,7 +57,7 @@ export function Home() {
       <BannerRow>
         <div />
         <Banner>
-          <Illust.Home height="90px" />
+          <Illust.House height="90px" />
           <Title
             style={{
               fontSize: 70,
@@ -63,7 +72,9 @@ export function Home() {
           </Title>
         </Banner>
       </BannerRow>
-      <FindClubTitle>Find Clubs</FindClubTitle>
+      <FindClubTitle>
+        <FindClubTitleCircle /> Find Clubs
+      </FindClubTitle>
       <FindClubRow>
         <Card title="Framer Club" img={require("../images/framer.png")} />
         <Card title="Canvas Club" img={require("../images/canvas.jpg")} />

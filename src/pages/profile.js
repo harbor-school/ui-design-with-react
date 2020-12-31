@@ -7,7 +7,6 @@ import { Card, Guide, SubmissionCard } from "../components";
 const Wrap = styled.div`
   margin: 0px ${pageMargin}px;
   padding: 100px 0px;
-  font-family: "Poppins", sans-serif;
 `;
 const Row = styled.div`
   display: grid;

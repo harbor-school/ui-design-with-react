@@ -37,7 +37,6 @@ const Details = styled.div`
   align-items: center;
 `;
 const Title = styled.h3`
-  font-family: "Poppins", sans-serif;
   color: white;
 `;
 const MemberInfo = styled.span`
@@ -46,7 +45,6 @@ const MemberInfo = styled.span`
   margin-left: 16px;
 `;
 const MemberNumber = styled.p`
-  font-family: "Poppins", sans-serif;
   display: inline-block;
   margin-left: 4px;
   color: white;
@@ -74,7 +72,7 @@ export function Card({
       <Gradient />
       <InfoWrap>
         <Info>
-          <Illust.Home height="28px" />
+          <Illust.House height="28px" />
           <Details>
             <Title>{title}</Title>
             <MemberInfo>
