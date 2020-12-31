@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { pageMargin } from "../constants";
-import * as Illust from "../illusts";
 import { Card, Guide, SubmissionCard } from "../components";
 
 const Wrap = styled.div`
@@ -78,11 +77,21 @@ export function Profile() {
         <Column>
           <Filter>Canvas Club (4) / Three.js Club (1)</Filter>
           <SubmissionsGrid>
-            <SubmissionCard img={require("../images/profile/canvas-1.png")} />
-            <SubmissionCard img={require("../images/profile/canvas-2.png")} />
-            <SubmissionCard img={require("../images/profile/canvas-3.png")} />
-            <SubmissionCard img={require("../images/profile/canvas-4.png")} />
-            <SubmissionCard img={require("../images/profile/threejs-1.png")} />
+            <SubmissionCard
+              img={require("../assets/images/profile/canvas-1.png")}
+            />
+            <SubmissionCard
+              img={require("../assets/images/profile/canvas-2.png")}
+            />
+            <SubmissionCard
+              img={require("../assets/images/profile/canvas-3.png")}
+            />
+            <SubmissionCard
+              img={require("../assets/images/profile/canvas-4.png")}
+            />
+            <SubmissionCard
+              img={require("../assets/images/profile/threejs-1.png")}
+            />
           </SubmissionsGrid>
         </Column>
       </Row>

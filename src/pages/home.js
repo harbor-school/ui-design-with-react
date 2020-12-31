@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { colors, pageMargin } from "../constants";
-import * as Illust from "../illusts";
+import * as Illust from "../assets/illusts";
 import { Card } from "../components";
 
 const Wrap = styled.div`
@@ -76,9 +76,18 @@ export function Home() {
         <FindClubTitleCircle /> Find Clubs
       </FindClubTitle>
       <FindClubRow>
-        <Card title="Framer Club" img={require("../images/framer.png")} />
-        <Card title="Canvas Club" img={require("../images/canvas.jpg")} />
-        <Card title="WebGL Club" img={require("../images/webgl-water.jpg")} />
+        <Card
+          title="Framer Club"
+          img={require("../assets/images/framer.png")}
+        />
+        <Card
+          title="Canvas Club"
+          img={require("../assets/images/canvas.jpg")}
+        />
+        <Card
+          title="WebGL Club"
+          img={require("../assets/images/webgl-water.jpg")}
+        />
         <Card />
       </FindClubRow>
     </Wrap>

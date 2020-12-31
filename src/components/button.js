@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import * as Illust from "../illusts";
 import { COLUMN_RATIO, colors } from "../constants";
 
 const Wrap = styled.button`

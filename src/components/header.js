@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { pageMargin, LOGGED_IN } from "../constants";
-import * as Illust from "../illusts";
+import * as Illust from "../assets/illusts";
 import { Link } from "react-router-dom";
 import { Button } from "../components";
 
