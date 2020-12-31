@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colors, pageMargin } from "../constants";
 import * as Illust from "../assets/illusts";
-import { Card } from "../components";
+import { ClubCard } from "../components";
 
 const Wrap = styled.div`
   /* background: yellowgreen; */
@@ -76,19 +76,19 @@ export function Home() {
         <FindClubTitleCircle /> Find Clubs
       </FindClubTitle>
       <FindClubRow>
-        <Card
+        <ClubCard
           title="Framer Club"
           img={require("../assets/images/framer.png")}
         />
-        <Card
+        <ClubCard
           title="Canvas Club"
           img={require("../assets/images/canvas.jpg")}
         />
-        <Card
+        <ClubCard
           title="WebGL Club"
           img={require("../assets/images/webgl-water.jpg")}
         />
-        <Card />
+        <ClubCard />
       </FindClubRow>
     </Wrap>
   );

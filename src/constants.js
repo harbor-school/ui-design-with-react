@@ -7,5 +7,6 @@ export const LOGGED_IN = true;
 
 export const colors = {
   primary: "hsl(22, 100%, 56%)",
-  bacgkroundPrimary: "hsl(43, 82%, 76%)"
+  bacgkroundPrimary: "hsl(43, 82%, 76%)",
+  bacgkroundSecondary: "hsl(43, 100%, 73%)"
 };

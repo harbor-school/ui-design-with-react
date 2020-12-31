@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { pageMargin } from "../constants";
-import { Card, Guide, SubmissionCard } from "../components";
+import { Card, ClubCardMinimized, Guide, SubmissionCard } from "../components";
 
 const Wrap = styled.div`
   margin: 0px ${pageMargin}px;
@@ -47,6 +47,11 @@ const DetailBlock = styled.div`
 `;
 const DetailTitle = styled.span``;
 const DetailAmount = styled.span``;
+const MyClubs = styled.div`
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+`;
 
 export function Profile() {
   return (
@@ -76,6 +81,10 @@ export function Profile() {
                 <DetailAmount>8,154</DetailAmount>
               </DetailBlock>
             </Detail>
+            <MyClubs>
+              <ClubCardMinimized title="Three.js Club" />
+              <ClubCardMinimized title="Canvas Club" />
+            </MyClubs>
           </Info>
         </Column>
         <Column>
