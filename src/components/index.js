@@ -1,5 +1,5 @@
 export * from "./header";
-export * from "./card";
+export * from "./club-card";
 export * from "./guide";
 export * from "./footer";
 export * from "./submission-card";

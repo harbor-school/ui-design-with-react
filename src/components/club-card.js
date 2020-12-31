@@ -63,7 +63,7 @@ const Gradient = styled.div`
   height: 100%;
 `;
 
-export function Card({
+export function ClubCard({
   title = "Three.js Club",
   img = require("../assets/images/billie.png")
 }) {
